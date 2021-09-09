@@ -1,5 +1,5 @@
 export const fetchApi = () => {
-  return fetch('https://ac-vill.herokuapp.com/villagers')
+  return fetch('https://ac-vill.herokuapp.com/villagers/?perPage=1000')
     .then((res) => res.json())
     .then((json) => {
       return json.map((character) => {
