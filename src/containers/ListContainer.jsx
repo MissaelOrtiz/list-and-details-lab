@@ -16,11 +16,20 @@ export default class ListContainer extends Component {
 
     render() {
       if(this.state.loading) {
-        return (<img
+        return (<div style={{
+          'width': '100vw',
+          'height': '100vh',
+          'display': 'flex',
+          'justify-content': 'center',
+          'align-items': 'center'
+        }}>
+          <img
           // eslint-disable-next-line max-len
-          src="https://icon-library.com/images/ajax-loading-icon/ajax-loading-icon-2.jpg"
-          alt="loading spinner"
-        />);
+            src="https://icon-library.com/images/ajax-loading-icon/ajax-loading-icon-2.jpg"
+            alt="loading spinner"
+            style={{ height: '200px', width: '200px' }}
+          />
+        </div>);
       }
       return (
         <ListComponent characters={this.state.characters} />

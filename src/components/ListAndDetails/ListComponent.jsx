@@ -21,12 +21,9 @@ const ListComponent = ({ characters }) => (
         'justify-content': 'center',
         'align-items': 'center',
         'text-align': 'center',
-        // border: 10px solid rgba(0, 0, 0, 0),
-        'width': '250px',
-        'border-radius': '20px',
         'margin': '20px',
       }}>
-        <ListItemComponent name={character.name} gender={character.gender} quote={character.quote} species={character.species} birthday={character.birthday} phrase={character.phrase} style={character.style} image={character.image}/>
+        <ListItemComponent name={character.name} idee={character.id} image={character.image}/>
       </li>
     ))}
   </ul>
@@ -38,12 +35,6 @@ ListComponent.propTypes = {
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
-      gender: PropTypes.string.isRequired,
-      quote: PropTypes.string.isRequired,
-      species: PropTypes.string.isRequired,
-      birthday: PropTypes.string.isRequired,
-      phrase: PropTypes.string.isRequired,
-      style: PropTypes.string.isRequired
     })
   ).isRequired,
 };
