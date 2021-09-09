@@ -3,8 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ListItemComponent = ({ name, image, idee }) => (
-  <button onClick={(e) => {
-    e.preventDefault();
+  <button onClick={() => {
     location.replace(`/${idee}`);
   }} style={{
     'width': '300px',
