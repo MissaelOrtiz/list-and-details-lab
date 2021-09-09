@@ -19,8 +19,6 @@ export default class ListContainer extends Component {
       if(this.state.loading) {
         return (<LoadingComponent />);
       }
-      return (
-        <ListComponent characters={this.state.characters} />
-      );
+      return <ListComponent characters={this.state.characters} />;
     }
 }

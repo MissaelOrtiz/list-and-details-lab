@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ListItemComponent from './ListItemComponent';
 
 const ListComponent = ({ characters }) => (
-  <ul aria-label="characters" style={{
+  <ul role="list" aria-label="characters" style={{
     display: 'flex',
     'flexDirection': 'row',
     width: '100%',

@@ -7,7 +7,15 @@ export default function App() {
   // return <ListContainer />;
   return (
     <Router>
-      <header>
+      <header style={{ 'backgroundColor': '#282c34',
+        'width': '100vw',
+        'minHeight': '10vh',
+        'display': 'flex',
+        'flexDirection': 'column',
+        'alignItems': 'center',
+        'justifyContent': 'center',
+        'fontSize': 'calc(10px + 2vmin)',
+        'color': 'white', }}>
         <nav>
           <Link to="/"> Home </Link>
         </nav>
