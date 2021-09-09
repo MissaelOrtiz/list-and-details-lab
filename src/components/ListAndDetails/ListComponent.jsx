@@ -6,21 +6,20 @@ import ListItemComponent from './ListItemComponent';
 const ListComponent = ({ characters }) => (
   <ul aria-label="characters" style={{
     display: 'flex',
-    'flex-direction': 'row',
+    'flexDirection': 'row',
     width: '100%',
-    'flex-wrap': 'wrap',
-    'text-align': 'center',
-    'align-content': 'center',
-    'justify-content': 'center'
+    'flexWrap': 'wrap',
+    'textAlign': 'center',
+    'justifyContent': 'center'
   }}>
     {characters.map((character) => (
       <li key={character.id} style={{ 
-        'list-style-type': 'none',
+        'listStyleType': 'none',
         display: 'flex',
-        'flex-direction': 'column',
-        'justify-content': 'center',
-        'align-items': 'center',
-        'text-align': 'center',
+        'flexDirection': 'column',
+        'justifyContent': 'center',
+        'alignItems': 'center',
+        'textAlign': 'center',
         'margin': '20px',
       }}>
         <ListItemComponent name={character.name} idee={character.id} image={character.image}/>
