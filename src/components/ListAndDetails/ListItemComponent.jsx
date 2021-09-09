@@ -3,8 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ListItemComponent = ({ name, image, gender, quote, species, birthday, phrase, style }) => (
-  <>
-    <img src={image} alt={name} width={'300px'}/>
+  <button>
+    <img src={image} alt={name} width={'200px'} height={'200px'}/>
     <p>Name: {name}</p>
     <p>Gender: {gender}</p>
     <p>Quote: {quote}</p>
@@ -12,7 +12,7 @@ const ListItemComponent = ({ name, image, gender, quote, species, birthday, phra
     <p>Birthday: {birthday}</p>
     <p>Phrase: {phrase}</p>
     <p>Style: {style}</p>
-  </>
+  </button>
 );
 
 ListItemComponent.propTypes = {

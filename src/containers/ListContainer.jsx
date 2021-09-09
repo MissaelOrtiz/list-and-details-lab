@@ -15,7 +15,6 @@ export default class ListContainer extends Component {
     }
 
     render() {
-      console.log(this.state.characters[0]?.image);
       if(this.state.loading) {
         return (<img
           // eslint-disable-next-line max-len
